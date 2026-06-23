@@ -1,4 +1,4 @@
--- OwnerToolsRayfield.lua
+-- TianHub.lua
 -- LocalScript: place in StarterPlayer > StarterPlayerScripts
 -- Requires Rayfield UI library
 
@@ -18,8 +18,8 @@ local LocalPlayer = Players.LocalPlayer
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-    Name = "Owner Tools",
-    LoadingTitle = "Owner Panel",
+    Name = "Tian Hub",
+    LoadingTitle = "Tian Hub",
     LoadingSubtitle = "Loaded",
     ConfigurationSaving = {
         Enabled = false,
@@ -163,7 +163,7 @@ local function addHighlight(player)
     if not player.Character then return end
     
     local h = Instance.new("Highlight")
-    h.Name = "OwnerHighlight"
+    h.Name = "TianHighlight"
     h.FillColor = highlightColor
     h.OutlineColor = Color3.fromRGB(255, 255, 255)
     h.FillTransparency = highlightTransparency
@@ -409,9 +409,9 @@ LocalPlayer.CharacterAdded:Connect(function()
 end)
 
 Rayfield:Notify({
-    Title = "Owner Tools Loaded",
+    Title = "Tian Hub",
     Content = "All features ready!",
     Duration = 3,
 })
 
-print("✅ Owner Tools loaded successfully!")
+print("✅ Tian Hub loaded successfully!")
